@@ -1,0 +1,6 @@
+/pyenv
+Pipfile.lock
+connector.py
+appp.py
+utils/db_client.py
+utils/__pycache__
