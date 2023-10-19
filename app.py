@@ -3,7 +3,7 @@ import asyncio
 from utils.db_connector import add_data, get_data, update_data, delete_data
 
 async def main():
-    st.title("SurrealDB Streamlit App")
+    st.title("Social Media Feed Application")
 
     # Add data section
     st.header("Add Data to Media Table")
@@ -19,23 +19,10 @@ async def main():
         else:
             st.warning("Please enter a name and post.")
 
-    # Get data section
-    st.header("Get Data from Media Table")
-    data = await get_data()
-    data = data[0]['result']
-    if data:
-        st.subheader("Data in Media Table:")
-        for row in data:
-            st.write(f"Name: {row['name']}")
-            st.write(f"Post: {row['post']}")
-            st.write("---")
-    else:
-        st.warning("No data found in the Media table.")
-
     # Update data section
     st.header("Update Data in Media Table")
     update_name = st.text_input("Name to update:")
-    new_post = st.text_area("New Post:")
+    new_post = st.text_area("Updated Post:")
     if st.button("Update"):
         if update_name and new_post:
             try:
@@ -58,6 +45,29 @@ async def main():
                 st.error(f"Error: {str(e)}")
         else:
             st.warning("Please enter a name to delete.")
+
+    # Get data section
+    st.header("Feed from Media Table")
+    data = await get_data()
+    data = data[0]['result']
+    if data:
+        st.subheader("Data in Media Table:")
+        for row in data:
+            name = '-'+row['name']
+            post = row['post']
+
+            # Styling the Post
+            color1 = '#1AA3FF'
+
+            st.markdown(f'\
+            <div style = "border:2px solid {color1};border-radius:15px;padding: 10px;"> \
+            <p style = "font-size:20px;">{post}</p>\
+            <p style = "font-size:12px;">{name}</p>      \
+            </div> \
+                        ',unsafe_allow_html=True)
+            st.markdown(f'<br>',unsafe_allow_html=True)
+    else:
+        st.warning("No data found in the Media table.")
 
 if __name__ == "__main__":
     asyncio.run(main())
