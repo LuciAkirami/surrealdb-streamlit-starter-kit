@@ -61,21 +61,13 @@ The Streamlit app provides the following functionalities:
 
 You can create new social media posts. Watch the video to see how it's done:
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src=".github/gui_create.m4v" type="video/mp4">
-  </video>
-</figure>
+https://github.com/LuciAkirami/surrealdb-streamlit-starter-kit/assets/110820999/72736d14-6402-4536-8ff8-1b4ab07eab65
 
 **Description:** The above video demonstrates the process of creating a new social media post in the app.
 
 Create Data (Database Update)
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src=".github/ter_create.m4v" type="video/mp4">
-  </video>
-</figure>
+https://github.com/LuciAkirami/surrealdb-streamlit-starter-kit/assets/110820999/a9ba2b18-6e8e-439a-8339-251a70757aa3
 
 **Description:** In this video, you'll see how the created post is added to the SurrealDB database under `media` table. (the test/test represents the names of both namespace and the database)
 
@@ -83,21 +75,13 @@ Create Data (Database Update)
 
 You can update the content of a post. Watch the video to see how it's done:
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src=".github/gui_update.m4v" type="video/mp4">
-  </video>
-</figure>
+https://github.com/LuciAkirami/surrealdb-streamlit-starter-kit/assets/110820999/ab276040-e09a-4313-9f15-cc697f1d73dc
 
 **Description:** In this video, you'll see how to update the content of an existing social media post.
 
 Update Data (Database Update)
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src=".github/ter_update.m4v" type="video/mp4">
-  </video>
-</figure>
+https://github.com/LuciAkirami/surrealdb-streamlit-starter-kit/assets/110820999/d04c5c13-d70c-4317-a558-c80a6f7907c6
 
 **Description:** This video showcases the updated data in the `media` table in the SurrealDB.
 
@@ -105,11 +89,7 @@ Update Data (Database Update)
 
 The app enables you to delete a post. Watch the video to see how it's done:
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src=".github/gui_del.m4v" type="video/mp4">
-  </video>
-</figure>
+https://github.com/LuciAkirami/surrealdb-streamlit-starter-kit/assets/110820999/7e858f44-0bdc-4b29-b4c0-43f8ffe930be
 
 **Description:** In this video, you'll see how to delete a social media post from the app.
 
